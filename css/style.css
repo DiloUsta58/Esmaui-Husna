@@ -1,0 +1,66 @@
+#displayText {
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    color: rgb(237, 237, 241);
+    text-align: center;
+    margin-top: 20px;
+    white-space: pre-line; /* Zeilenumbrüche im Text werden interpretiert */
+}
+button {
+    background-color: #C2185B;
+    color: white;
+    border: unset;
+    padding: 10px;
+    border-radius: 9px;
+    min-width: 160px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0px 0px;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 
+                0px 2px 2px 0px rgb(0 0 0 / 14%), 
+                0px 1px 5px 0px rgb(0 0 0 / 12%);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+button:hover {
+    background-color: #d63475;
+}
+button:active {
+    background-color: #a1124c; /* Dunklerer Farbton für den Klick-Effekt */
+    box-shadow: 0px 1px 1px -1px rgb(0 0 0 / 20%), 
+                0px 1px 1px 0px rgb(0 0 0 / 14%), 
+                0px 1px 3px 0px rgb(0 0 0 / 12%);
+    transform: scale(0.98); /* Button wird beim Klicken leicht verkleinert */
+}
+
+/* Customize appearance of audio player */ 
+#audioPlayer { width: 80%; height: 60px; background-color: #161b2c;; display: block; align-items: right; justify-content: center;
+                padding: 16px; }
+/* Gesammtlänge entfernen                         */
+audio::-webkit-media-controls-time-remaining-display {
+ display:none;
+}
+/* Possition entfernen                         */
+audio::-webkit-media-controls-current-time-display {
+ display:none;
+}
+/* Mute entfernen                         */
+audio::-webkit-media-controls-mute-button {
+ display:none;
+}
+
+body { height: 100%; margin: 0; padding-top: 32px; font-family: Arial, sans-serif; color: #71c2e7; margin: 10px; background-color:#161b2c; }
+li { font-family: Arial, sans-serif; font-size: 16px; text-align: left; color: #71c2e7; margin: 1px; }
+h1 { text-align: center; color: #71c2e7;}
+.hidden { display: none; /* Unsichtbar */ }
+header { background-color: #1a2336; padding: 16px 100px; font-size: 24px; position: fixed; left: 0; right: 0; top: 0; }
+
+table,th,td,caption {border: thin solid #2649bd;}
+table {	background-color: #161b2c; border-collapse: collapse;	border-spacing: 0; border-width: thin 50 50 thin;	margin: 0 0 1em; table-layout:auto;
+    	/* Prevents HTML tables from becoming too wide */	
+	max-width: 100%;}
+th,td {	font-weight: normal; text-align: center; font-family: Arial; font-size: 16px; text-align: center;  font-style: normal; font-weight: bold; width: 10.5%; }
+th,caption {background-color: #161b2c; font-weight: 700;}
+th,td,caption { padding: 0.6em 0.6em;}
+tr:nth-child(odd) { background-color: #0e1b46;}
+caption { text-align: center; border-width: thin thin 0 thin;}
+table.hidden tr.result > * {border-top-width: medium;}
