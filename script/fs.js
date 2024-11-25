@@ -161,13 +161,13 @@
 
        // Zeiten und zugehörige Bilder
         const imageChanges = [
-            { time: 1, imageSrc: "img_w/_Allah.gif", text: "Allah الله" },  
-            { time: 9, imageSrc: "img_w/_Er-Rahman.gif", text: "Ar Rahman الرَّحْمَنُ" },  
-            { time: 20, imageSrc: "img_w/_Er-Rahim.gif" , text: "Ar Rahim الرَّحِيمُ"}, 
-            { time: 32, imageSrc: "img_w/_El-Melik.gif", text: "Al Malik الْمَلِكُ" }, 
-            { time: 44, imageSrc: "img_w/_El-Kuddüs.gif", text: "Al Quddus الْقُدُّوسُ" }, 
-            { time: 55, imageSrc: "img_w/_El-Selam.gif", text: "As Salam السَّلاَمُ" }, 
-            { time: 67, imageSrc: "img_w/_El-Mü'min.gif", text: "Al Mumin الْمُؤْمِنُ" }, 
+            { time: 1, imageSrc: "img_w/01_Allah.gif", text: "Allah الله" },  
+            { time: 9, imageSrc: "img_w/02_Er-Rahman.gif", text: "Ar Rahman الرَّحْمَنُ" },  
+            { time: 20, imageSrc: "img_w/03_Er-Rahim.gif" , text: "Ar Rahim الرَّحِيمُ"}, 
+            { time: 32, imageSrc: "img_w/04_El-Melik.gif", text: "Al Malik الْمَلِكُ" }, 
+            { time: 44, imageSrc: "img_w/05_El-Kuddüs.gif", text: "Al Quddus الْقُدُّوسُ" }, 
+            { time: 55, imageSrc: "img_w/06_El-Selam.gif", text: "As Salam السَّلاَمُ" }, 
+            { time: 67, imageSrc: "img_w/07_El-Mü'min.gif", text: "Al Mumin الْمُؤْمِنُ" }, 
             { time: 78, imageSrc: "img_w/08_El-Müheymin.gif", text: "Al Muhaymin الْمُهَيْمِنُ" }, 
             { time: 90, imageSrc: "img_w/09_El-Aziz.gif", text: "Al Aziz الْعَزِيزُ" }, 
             { time: 101, imageSrc: "img_w/10_El-Cabbar.gif", text: "Al Jabbar الْجَبَّارُ" }, 
