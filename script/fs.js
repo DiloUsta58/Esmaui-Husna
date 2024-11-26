@@ -42,7 +42,7 @@
             // Event Listener für den Button
             toggleButton.addEventListener("click", butText);
 
-            let audioDuration = "00:00"; // Standardwert für die Länge der Audiodatei
+            let audioDuration = "19:19"; // Standardwert für die Länge der Audiodatei
             // Zeitstempel, bei denen die Name und die Liste geändert wird
             const timestamps = {
                 "00:01": { header: "Allah الله", track: "track1" },
@@ -143,7 +143,8 @@
                 "18:22": { header: "Al Baqi الْبَاقِى", track: "track96" },
                 "18:33": { header: "Al Varis الْوَارِثُ", track: "track97" },
                 "18:45": { header: "Ar Rashid الرَّشِيدُ", track: "track98" },
-                "18:57": { header: "As Sabur ", track: "track99" },
+                "18:57": { header: "As Sabur. الصَّبُورُ", track: "track99" },
+                "19:12": { header: "Allah الله", track: "track100" }
             };
 
             // Funktion zum Formatieren der aktuellen Zeit
@@ -259,7 +260,8 @@
             { time: 1102, imageSrc: "img_w/96_El-Baki.gif", text: "Al Baqi الْبَاقِى" }, 
             { time: 1113, imageSrc: "img_w/97_El-Varis.gif", text: "Al Varis الْوَارِثُ" }, 
             { time: 1125, imageSrc: "img_w/98_Er-Resid.gif", text: "Ar Rashid الرَّشِيدُ" }, 
-            { time: 1137, imageSrc: "img_w/99_Es-Sabur.gif", text: "As Sabur. " },
+            { time: 1137, imageSrc: "img_w/99_Es-Sabur.gif", text: "As Sabur. الصَّبُورُ" },
+            { time: 1152, imageSrc: "img_w/01_Allah.gif", text: "Allah الله" }
         ];
         const timeAnlamı = [
             { time: 1, text: "Her ismin vasfını ihtiva eden öz adı. Kendinden başka ilah bulunmayan tek Allah. Bu ism-i şerif, Cenâb-ı Hakk'ın has ismidir. Bu itibarla diğer isimlerin ifade ettiği bütün güzel vasıfları ve İlâhî sıfatları içine alır. Diğer isimler ise, yalnız kendi mânalarına delâlet ederler. Bu bakımdan Allah isminin yerini hiçbir isim tutamaz. Bu isim, Allah'tan başkasına mecazen de verilemez. Diğer isimlerinden bazılarının, Allah'tan başkasına isim olarak verilmesi caizdir.İsimlerin sultanı." },
@@ -360,7 +362,8 @@
             { time: 1102, text: "Varlığının sonu olmayan, ebedi olan." },
             { time: 1113, text: "Her şeyin asıl sahibi olan." },
             { time: 1125, text: "İrşada muhtaç olmayan, doğru yolu gösteren." },
-            { time: 1137, text: "Ceza vermede, acele etmeyen." }
+            { time: 1137, text: "Ceza vermede, acele etmeyen." },
+            { time: 1152, text: "Her ismin vasfını ihtiva eden öz adı. Kendinden başka ilah bulunmayan tek Allah. Bu ism-i şerif, Cenâb-ı Hakk'ın has ismidir. Bu itibarla diğer isimlerin ifade ettiği bütün güzel vasıfları ve İlâhî sıfatları içine alır. Diğer isimler ise, yalnız kendi mânalarına delâlet ederler. Bu bakımdan Allah isminin yerini hiçbir isim tutamaz. Bu isim, Allah'tan başkasına mecazen de verilemez. Diğer isimlerinden bazılarının, Allah'tan başkasına isim olarak verilmesi caizdir.İsimlerin sultanı." }
         ];        
         const timeSureler = [
             { time: 1, text: "1. (1:1); (3:18); (5:109); (6:124); (7:180); (8:40); (16:91); (20:8); (57:5); (65:3); (74:56); (85:20);" },
@@ -461,7 +464,8 @@
             { time: 1102, text: "96. (55:27);" },
             { time: 1113, text: "97. (15:23);" },
             { time: 1125, text: "98. (-:-);" },
-            { time: 1137, text: "99. (-:-);" }
+            { time: 1137, text: "99. (-:-);" },
+            { time: 1152, text: "1. (1:1); (3:18); (5:109); (6:124); (7:180); (8:40); (16:91); (20:8); (57:5); (65:3); (74:56); (85:20);" }
         ];  
 
         let currentSpanIndexA = 0;
@@ -517,6 +521,7 @@
                 Sure.textContent = "1. (1:1); (3:18); (5:109); (6:124); (7:180); (8:40); (16:91); (20:8); (57:5); (65:3); (74:56); (85:20);";
                 currentSpanIndexA = 0;
                 currentSpanIndexS = 0;
+                duration.textContent = audioPlayer.duration
             }
         });
 
