@@ -17,19 +17,28 @@
 </head>
 <body>
     
-    <center><img src="img_w/00_Celle Celâlühu.gif" alt="Celle Celâlühu" height="80" width="80"></center>
-    <h1 id="header">Esma'ül Hüsna - (Allah`ın (c.c) En Güzel İsimleri) ve Anlamı<br>
-        <font face="Arial" class="Aciklama">Mustafa Özcan Güneşdoğdu)</font>
-    </h1>
+    <div align="right" id="Okuyan"><font face="Arial" class="Aciklama">
+        Beste / Okuyan: Mustafa Özcan Güneşdoğdu)<br>
+        Seslendiren: Uğur Kayabaşı</font></div><br><br>
+
+        <center><img src="img_w/00_Celle Celâlühu.gif" alt="Celle Celâlühu" height="80" width="80"></center><br>
+    <h1 id="header">Esma'ül Hüsna - (Allah`ın (c.c) En Güzel İsimleri) ve Anlamı</h1>
     
     <!--<font face="Arial" size="+1" id="GanzeSekunden" color="white"><b>-</b></font>-->
+
+    <div align="center" id="VideoPlayer" class="hidden">
+        <video width="560" height="315" controls>
+            <source src="vs\terapi.mp4" type="video/mp4">
+            Ihr Browser unterstützt das Video-Tag nicht.
+        </video>
+    </div>
 
     <div align="center">
         <font face="Arial" size="+1" id="currentTime">00:00 - </b></font>
         <font face="Arial" size="+1" id="Duration"><b>00:00</b></font>
     </div>
     <center>
-        <audio id="audioPlayer" controls loop>
+        <audio id="audioPlayer" controls>
             <source src="sounds\Esma'ül Hüsna-1.mp3" type="audio/mpeg">
             Ihr Browser unterstützt kein Audioelement.
         </audio>
@@ -40,7 +49,7 @@
                 <font face="Arial" size="5.0em" id="NameOfAllah" color="red"><b>Allah</b></font><br><br>
             </div> 
         </center>
-<table >
+<table id="Tabelle_Anlamlari">
  <tr>
     <td><font face="Arial" size="3.5em" id="Anlamlari" align="center">
         <b>[ Her ismin vasfını ihtiva eden öz adı. 
@@ -55,7 +64,7 @@
     </tr>
 </table><br>
 
-<div style="display: flex; justify-content: space-between; align-items: center;">
+<div style="display: flex; justify-content: space-between; align-items: center;" id="Liste">
     <!-- Bild auf der linken Seite -->
     <img id="Allah_Image" src="img_w/01_Allah.gif" style="display: inline-block;" alt="Allah" width="65px" height="44px" >
     <!-- Button auf der rechten Seite -->
@@ -63,8 +72,7 @@
 </div>
 
 
-<p>
-     <table id="ALLAHIN_ISIMLERI" class="hidden">
+<p> <table id="ALLAHIN_ISIMLERI" class="hidden">
             <tr>
                 <td id="track1" >1. Allah</td>
                 <td id="track2">2. Er-Rahmân</td>
