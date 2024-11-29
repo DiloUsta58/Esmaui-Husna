@@ -30,7 +30,7 @@
             toggleButton.addEventListener("click", () => {
                 if (ALLAHIN_ISIMLERI.style.display === "none") {
                     ALLAHIN_ISIMLERI.style.display = "block"; // Sichtbar machen
-                    
+                   
                 } else {
                     ALLAHIN_ISIMLERI.style.display = "none"; // Unsichtbar machen
                     
@@ -529,7 +529,7 @@
                 Sure.textContent = "[ 1:1, 3:18, 5:109, 6:124, 7:180, 8:40, 16:91, 20:8, 57:5, 65:3, 74:56, 85:20 ]";
                 currentSpanIndexA = 0;
                 currentSpanIndexS = 0;
-                duration.textContent = audioPlayer.duration
+                Duration.textContent = audioPlayer.duration
             }
         });
 
@@ -542,11 +542,38 @@
                     if (trackElement) {
                         trackElement.style.color = "red";  // Die Farbe des Listeneintrags ändern
                         NameOfAllah.textContent = `${trackElement.textContent}`; //Türkçe Okunuşu
-
-                        
                     }
         });
-                    //textDisplay.style.color = "Green";
-                    //textDisplay.textContent = `${trackElement.textContent}`;
+ 
+        //---------------------------------------------------------------------------------------------------------------------
+     
+        const audio = document.getElementById('audioPlayer');
+        const video = document.getElementById('VideoPlayer');
+        
+        // Überprüfe regelmäßig die verbleibende Zeit des Audios
+        audio.addEventListener('timeupdate', () => {
+            const remainingTime = audio.duration - audio.currentTime; // Verbleibende Zeit in Sekunden
 
-        //-----------------------------------------------------------------------------------------------------------------------------------------
+            if (remainingTime <= 7) { // Wenn 7 Sekunden oder weniger übrig sind
+                video.style.display = 'block'; // Video sichtbar machen
+                audio.style.display = 'none';
+                image.style.display = "none";
+                Tabelle_Anlamlari.style.display = "none";
+                //Anlamlari.style.display = 'none';
+                //Sure.style.display = 'none';
+                NameOfAllah.style.display = "none";
+                textDisplay.style.display = "none";
+                currentTime.style.display = "none";
+                currentTimeDisplay.style.display = "none";
+                Duration.style.display = "none";
+                Allah_Image.style.display = "none";
+                toggleButton.style.display = "none";
+            }
+        });
+        // Sicherstellen, dass Video abspielt, wenn User interagiert hat
+        document.body.addEventListener('click', () => {
+        video.play().catch(error => {
+            console.log('Video konnte nicht abgespielt werden:', error);
+        });
+    });
+//---------------------------------------------------------------------------------------------------------------------
