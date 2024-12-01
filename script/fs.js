@@ -40,10 +40,10 @@
 
         // Funktion zur Änderung des Texts
         function butText() {
-            if (toggleButton.textContent === "Listeyi göster!") {
-                toggleButton.textContent = "Listeyi gizle!";
+            if (toggleButton.textContent === "İsimleri göster!") {
+                toggleButton.textContent = "İsimleri gizle!";
             } else {
-                toggleButton.textContent = "Listeyi göster!";
+                toggleButton.textContent = "İsimleri göster!";
             }
         }
             // Event Listener für den Button
